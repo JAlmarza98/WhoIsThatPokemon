@@ -1,17 +1,50 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title>Who's That Pokémon?</title>
+    <style>
+      #building {
+        background: #1e5799;
+        background: -moz-linear-gradient(
+          top,
+          #1e5799 0%,
+          #207cca 9%,
+          #ff0000 100%
+        );
+        background: -webkit-linear-gradient(
+          top,
+          #1e5799 0%,
+          #207cca 9%,
+          #ff0000 100%
+        );
+        background: linear-gradient(
+          to bottom,
+          #1e5799 0%,
+          #207cca 9%,
+          #ff0000 100%
+        );
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-size: 100% 100%;
+      }
+    </style>
   </head>
   <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
+    <div id="building">
+      <noscript>
+        <strong
+          >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+          properly without JavaScript enabled. Please enable it to
+          continue.</strong
+        >
+      </noscript>
+      <div id="app"></div>
+    </div>
     <!-- built files will be auto injected -->
   </body>
 </html>
