@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PokemonOptions Component Debe hacer match con el Snapshot con datos 1`] = `
+<div>
+  <h1>who's that pokemon?</h1>
+  <div class="pokemon-container"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/2.svg" class="hidden-pokemon" alt="pokemon"></div>
+  <div class="options-container">
+    <ul>
+      <li>bulbasaur</li>
+      <li>ivysaur</li>
+      <li>venusaur</li>
+      <li>charmander</li>
+    </ul>
+  </div>
+  <!--v-if-->
+  <div class="score">
+    <div>score</div>
+    <div>0</div>
+  </div>
+</div>
+`;
+
+exports[`PokemonOptions Component Debe hacer match con el Snapshot sin datos 1`] = `<h1>Wait a moment please...</h1>`;
